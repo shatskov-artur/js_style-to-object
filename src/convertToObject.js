@@ -12,7 +12,7 @@ function convertToObject(sourceString) {
   for (const element of splitBySemicolon) {
     const [key, value] = element.split(':');
 
-    if (key.trim() === '') {
+    if (value === undefined) {
       continue;
     }
 
